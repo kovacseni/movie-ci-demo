@@ -30,10 +30,10 @@ public class Movie {
         return releaseDate;
     }
 
-
     public int getLength() {
         return length;
     }
+
 
     public Long getId() {
         return id;
