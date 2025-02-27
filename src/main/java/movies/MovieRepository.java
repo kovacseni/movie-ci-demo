@@ -14,11 +14,9 @@ public class MovieRepository {
 
     private JdbcTemplate jdbcTemplate;
 
-
     public MovieRepository(DataSource dataSource) {
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
-
 
     public Movie saveMovie(Movie movie){
         KeyHolder keyHolder = new GeneratedKeyHolder();
